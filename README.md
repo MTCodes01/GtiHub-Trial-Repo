@@ -1,2 +1,2 @@
 # GtiHub-Trial-Repo
-This is a trial repo for commitoverflow in github
+This is a trial repo for commitoverflow in github.
