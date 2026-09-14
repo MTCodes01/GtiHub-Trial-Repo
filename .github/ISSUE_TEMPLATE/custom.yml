@@ -35,25 +35,6 @@ body:
       description: Add any other relevant context here.
     validations:
       required: false
-  - type: dropdown
-    id: difficulty
-    attributes:
-      label: Difficulty
-      options:
-        - Easy
-        - Intermediate
-        - Advanced
-    validations:
-      required: true
-  - type: dropdown
-    id: category
-    attributes:
-      label: Commit Overflow Category
-      options:
-        - General
-        - Other
-    validations:
-      required: true
   - type: checkboxes
     id: checklist
     attributes:
