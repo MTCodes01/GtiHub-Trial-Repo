@@ -178,6 +178,7 @@ input[type="text"]:focus {
 
 input[type="color"] {
     -webkit-appearance: none;
+    appearance: none;
     border: 1px solid var(--border-color);
     border-radius: 6px;
     width: 32px;
