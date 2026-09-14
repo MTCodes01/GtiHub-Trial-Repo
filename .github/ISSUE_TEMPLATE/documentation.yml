@@ -1,33 +1,31 @@
-name: Documentation
-description: Report a missing, unclear, or incorrect documentation
+name: Documentation Update
+description: Propose a documentation update you'd like to write
 title: "[Docs]: "
 labels: ["documentation", "needs triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for helping improve our documentation!
-  - type: input
-    id: title
-    attributes:
-      label: Title
-      description: A clear and concise title for the documentation issue.
-    validations:
-      required: true
+        ## Documentation Update Proposal
   - type: textarea
     id: description
     attributes:
-      label: Description
-      description: What is missing, unclear, or incorrect? Provide links to the specific pages or files.
+      label: Current Issue
+      description: What is missing, unclear, or incorrect in the current documentation? Provide links.
     validations:
       required: true
   - type: textarea
-    id: expected_behaviour
+    id: proposed_update
     attributes:
-      label: Expected Behaviour
-      description: What should the documentation say instead?
+      label: Proposed Update
+      description: What exactly will you add or change in the documentation?
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### Extra Details
   - type: textarea
     id: additional_context
     attributes:
@@ -40,7 +38,7 @@ body:
     attributes:
       label: Checklist
       options:
+        - label: I confirm that I want to write this documentation update.
+          required: true
         - label: I have searched the existing issues.
           required: true
-        - label: I am willing to submit a PR to fix this documentation issue.
-          required: false

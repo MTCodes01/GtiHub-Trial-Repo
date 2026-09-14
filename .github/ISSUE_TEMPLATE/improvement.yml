@@ -1,33 +1,31 @@
-name: Improvement
-description: Propose a general enhancement or improvement to existing code
+name: Improvement Proposal
+description: Propose a code improvement or refactor you'd like to implement
 title: "[Improvement]: "
 labels: ["enhancement", "needs triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for suggesting an improvement for our codebase!
-  - type: input
-    id: title
-    attributes:
-      label: Title
-      description: A clear and concise title for the improvement.
-    validations:
-      required: true
+        ## Code Improvement Proposal
   - type: textarea
     id: description
     attributes:
-      label: Description
-      description: What is the current state and why does it need improvement?
+      label: Current State
+      description: What is the current state of the code and why does it need improvement?
     validations:
       required: true
   - type: textarea
-    id: expected_behaviour
+    id: proposed_solution
     attributes:
-      label: Expected Behaviour
-      description: What is the proposed solution or improvement?
+      label: Proposed Improvement
+      description: How do you plan to improve it? What is your proposed solution?
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### Benchmarks & Context
   - type: textarea
     id: additional_context
     attributes:
@@ -40,5 +38,7 @@ body:
     attributes:
       label: Checklist
       options:
+        - label: I confirm that I want to work on this improvement.
+          required: true
         - label: I have searched the existing issues.
           required: true
