@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Label Editor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>Label Editor</h1>
+                <p>Manage your repository labels locally</p>
+            </div>
+            <div class="actions">
+                <button id="addLabelBtn" class="btn btn-secondary">Add Label</button>
+                <button id="saveBtn" class="btn btn-primary">Save Changes</button>
+            </div>
+        </header>
+
+        <div id="toast" class="toast">Changes saved successfully!</div>
+
+        <main id="labelsContainer">
+            <!-- Labels will be rendered here dynamically -->
+            <div class="loading">Loading labels...</div>
+        </main>
+    </div>
+
+    <!-- Template for a label row -->
+    <template id="labelTemplate">
+        <div class="label-card">
+            <div class="label-header">
+                <div class="label-preview">
+                    <span class="badge">Preview</span>
+                </div>
+                <button class="delete-btn" aria-label="Delete label">×</button>
+            </div>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="input-name" placeholder="Label name">
+            </div>
+            <div class="form-row">
+                <div class="form-group color-group">
+                    <label>Color</label>
+                    <div class="color-picker-wrapper">
+                        <input type="color" class="input-color-picker">
+                        <input type="text" class="input-color-text" placeholder="Hex color">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Description (Optional)</label>
+                <input type="text" class="input-desc" placeholder="Label description">
+            </div>
+        </div>
+    </template>
+
+    <script src="app.js"></script>
+</body>
+</html>

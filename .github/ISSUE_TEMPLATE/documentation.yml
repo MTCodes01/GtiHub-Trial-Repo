@@ -1,0 +1,64 @@
+name: Documentation
+description: Report a missing, unclear, or incorrect documentation
+title: "[Docs]: "
+labels: ["documentation", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve our documentation!
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: A clear and concise title for the documentation issue.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is missing, unclear, or incorrect? Provide links to the specific pages or files.
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behaviour
+    attributes:
+      label: Expected Behaviour
+      description: What should the documentation say instead?
+    validations:
+      required: true
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Add any other context here.
+    validations:
+      required: false
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty
+      options:
+        - Easy
+        - Intermediate
+        - Advanced
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Commit Overflow Category
+      options:
+        - Documentation
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched the existing issues.
+          required: true
+        - label: I am willing to submit a PR to fix this documentation issue.
+          required: false
