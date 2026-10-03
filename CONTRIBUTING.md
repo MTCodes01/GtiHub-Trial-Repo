@@ -33,7 +33,7 @@ Examples:
 ## Creating Issues
 
 - Before creating an issue, search the existing issues to avoid duplicates.
-- Use the provided Issue Forms. Do not bypass them.
+- Use the provided Issue Templates.
 - Provide as much detail as possible, including reproduction steps for bugs.
 
 ## Creating PRs

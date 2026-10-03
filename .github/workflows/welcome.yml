@@ -30,11 +30,9 @@ jobs:
             if (prs.length === 1) {
               const body = `🎉 Welcome to **Commit Overflow**! We are thrilled to have you here.
               
-              Thank you for taking the time to submit your first Pull Request! Before we review your code, please ensure you have read through the following important documents:
+              Thank you for taking the time to submit your first Pull Request! Before we review your code, please ensure you have read through the following:
               
-              - 📖 [Contribution Guide](docs/contribution-guide.md)
               - 🛠️ [CONTRIBUTING.md](CONTRIBUTING.md)
-              - 🤝 [Code of Conduct](CODE_OF_CONDUCT.md)
               
               A mentor or maintainer will review your pull request shortly. If you have any questions, feel free to ask here. Happy coding!`;
               
