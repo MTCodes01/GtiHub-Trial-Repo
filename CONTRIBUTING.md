@@ -40,7 +40,7 @@ Examples:
 
 - **One PR per Issue**: Do not combine multiple unrelated changes into one PR.
 - Fill out the Pull Request Template completely.
-- Ensure your PR uses one of the required keywords to link the issue: `Closes #123`, `Fixes #123`, or `Resolves #123`.
+- Ensure your PR uses the required keyword to link the issue: `Closes #123`.
 
 ## Review Process & Merge Policy
 
